@@ -57,22 +57,50 @@ alias dpsa='docker ps --all'
 alias di='docker image'
 alias dils='docker image ls'
 
+# Python development environment
+# TODO - break these into a zsh function
+alias pythondevup='docker run --name=pydevdocker -d -p 8888:8888 -p 8000:8000 -v ~/code/python/:/notebooks/workspace tensorflow/tensorflow:latest && docker exec -it pydevdocker bash'
+alias pythondevdown='docker stop pydevdocker'
+alias pythondevrm='docker rm pydevdocker'
+
+# Purge ~/code/**/node_modules
+alias npm-purge='find ~/code -name "node_modules" -type d -prune -exec rm -rf "{}" +'
+
+# Home/Away Keyboard settings
+alias kbdas='setxkbmap -option altwin:swap_alt_win'
+alias kbreset='setxkbmap -option'
+
+# PBCopy Helper
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
+
+# Copy RSA Public Key to clipboard
+alias cprsa="pbcopy < ~/.ssh/id_rsa.pub"
+
 # System Aliases
 alias version='lsb_release -a'
 
 # python -m SimpleHTTPServer 8000
-alias serve='python -m SimpleHTTPServer 3001'
+alias serve='echo "Serving $(pwd) at \n\n\t http://localhost:3003 \n" && python -m SimpleHTTPServer 3003'
 
 # CD aliases
 alias rpi='cd ~/MEGA/rpi/Semesters/2018_Spring'
 alias opsys='cd ~/MEGA/rpi/Semesters/2018_Spring/OPSYS'
 alias websys='cd ~/MEGA/rpi/Semesters/2018_Spring/WEBSYS'
+alias cdc="cd ~/code"
+alias cdd="cd ~/Downloads"
 
 # Logout helper
 alias lo='logout'
 
+# GVFS (Linux Mint file manager)
+alias fe='gvfs-open ./'
+
 # Hub
 # eval "$(hub alias -s)"
+
+# Simplify3D
+sudo /opt/Simplify3D-4.0.1/LaunchScript.sh
 
 # alias brewu="brew update && brew upgrade --all && brew doctor && brew cleanup"
 alias latexmk='latexmk -pdf -pvc'

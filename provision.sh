@@ -174,3 +174,7 @@ source ~/.profile
 npm install -g gulp nodemon
 
 # # # # #
+
+# Install XCopy
+# https://garywoodfine.com/use-pbcopy-on-ubuntu/
+# sudo apt-get install xclip -y

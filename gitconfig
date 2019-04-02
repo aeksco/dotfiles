@@ -26,7 +26,7 @@
   whitespace = space-before-tab,-indent-with-non-tab,trailing-space
   autocrlf = input
   compression = 9
-  editor = vim
+  editor = subl
   preloadindex = true
 [commit]
   template = ~/.gitmessage

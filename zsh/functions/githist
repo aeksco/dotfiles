@@ -1,0 +1,5 @@
+# Prints the git file change history for a single file
+
+function githist() {
+  git log --follow -p -- "$1";
+}

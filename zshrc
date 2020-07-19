@@ -12,10 +12,10 @@ export ZSH=$HOME/code/dotfiles
 
 ## fpath setup ---------------------------------------------------------------
 # load our own completion functions
-fpath=(
-  /usr/local/share/zsh/site-functions
-  $fpath
-)
+# fpath=(
+#   /usr/local/share/zsh/site-functions
+#   $fpath
+# )
 
 # load custom executable functions
 for function in $ZSH/zsh/functions/*; do
@@ -120,13 +120,15 @@ cdpath=(
 
 ## Local config --------------------------------------------------------------
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
-source /home/aeksco/code/dotfiles/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /home/aeksco/code/dotfiles/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
+source $HOME/code/dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/code/dotfiles/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+source $HOME/code/dotfiles/zsh/plugins/docker-zsh-completion/docker-zsh-completion.plugin.zsh
 
+# Binds ZSH history search up/down keys
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
-# bindkey '^[[A' history-substring-search-up
-# bindkey '^[[B' history-substring-search-down
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
 # miniconda3
-export PATH="/home/aeksco/miniconda3/bin:$PATH"
+export PATH="$HOME/aeksco/miniconda3/bin:$PATH"

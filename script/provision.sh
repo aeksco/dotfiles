@@ -1,3 +1,5 @@
+# Deprecated Linux provision script
+
 # Install VirtualBox + Vagrant
 sudo echo "deb http://download.virtualbox.org/virtualbox/debian xenial contrib" >> /etc/apt/sources.list
 

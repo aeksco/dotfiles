@@ -4,7 +4,7 @@
 
 # Use Vim as VISUAL and EDITOR
 export PAGER='less -m'
-export EDITOR='vim'
+export EDITOR='subl'
 export VISUAL=$EDITOR
 
 # ensure dotfiles bin directory is loaded first

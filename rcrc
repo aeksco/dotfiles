@@ -1,2 +1,2 @@
-EXCLUDES="README*.md LICENSE"
-DOTFILES_DIRS="$HOME/code/dotfiles"
+EXCLUDES="README*.md LICENSE setup.sh script .gitignore"
+DOTFILES_DIRS="$HOME/.dotfiles $HOME/code/dotfiles"

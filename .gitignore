@@ -1,0 +1,7 @@
+# ZSH
+zsh/plugins
+~zsh/plugins/.gitkeep
+
+# TMUX
+tmux/plugins
+~tmux/plugins/.gitkeep

@@ -113,15 +113,6 @@ zstyle ':completion:*:killall:*'   force-list always
 ## Prompt --------------------------------------------------------------------
 source $ZSH/zsh/prompt.zsh
 
-## RBENV --------------------------------------------------------------------
-# QUESTION - should this be here?
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
-
-## RVM --------------------------------------------------------------------
-source /etc/profile.d/rvm.sh
-
 ## cdpath --------------------------------------------------------------------
 cdpath=(
   $HOME/code

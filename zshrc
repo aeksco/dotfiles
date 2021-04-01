@@ -132,3 +132,8 @@ bindkey '^[[B' history-substring-search-down
 
 # miniconda3
 export PATH="$HOME/aeksco/miniconda3/bin:$PATH"
+
+# Rust 
+# To get started you need Cargo's bin directory ($HOME/.cargo/bin) in your PATH
+# environment variable. Next time you log in this will be done automatically.
+source $HOME/.cargo/env

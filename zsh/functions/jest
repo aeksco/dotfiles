@@ -1,0 +1,9 @@
+# Run the jest suite for a single test
+
+function jester() {
+    yarn jest --config jest.config.js -i "$1"
+}
+
+function jesteru() {
+    yarn jest --config jest.config.js -i "$1" -u
+}

@@ -11,7 +11,7 @@ mv ./zsh-syntax-highlighting ~/.dotfiles/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-history-substring-search
 
 # TMUX Ressursct
-git clone https://github.com/tmux-plugins/tmux-resurrect ./tmux/
+git clone https://github.com/tmux-plugins/tmux-resurrect ./tmux/plugins
 
 # Copies .zshrc, .zshenv
 # cp ~/dotfiles/zshrc ~/.zshrc

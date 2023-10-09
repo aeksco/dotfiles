@@ -1,0 +1,3 @@
+function vlc() {
+  /Applications/VLC.app/Contents/MacOS/VLC --no-video-deco --no-embedded-video --video-on-top $1
+}

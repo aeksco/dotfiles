@@ -27,3 +27,8 @@ cp ~/dotfiles/gitmessage ~/.gitmessage
 
 # Copies .tmux.conf
 cp ~/dotfiles/tmux.conf ~/.tmux.conf
+
+# # # # 
+# PGP Setup
+# https://gist.github.com/troyfontaine/18c9146295168ee9ca2b30c00bd1b41e
+# brew install gpg2 gnupg pinentry-mac  

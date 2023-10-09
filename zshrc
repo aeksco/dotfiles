@@ -26,7 +26,7 @@ done
 autoload -U zmv
 
 zmodload zsh/stat           # Improved file stat details
-zmodload zsh/zftp           # A built in FTP client to the shell, awesome!
+# zmodload zsh/zftp           # A built in FTP client to the shell, awesome!
 
 ## Options -------------------------------------------------------------------
 setopt appendhistory        #
@@ -122,7 +122,7 @@ cdpath=(
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 source $HOME/code/dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/code/dotfiles/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
-source $HOME/code/dotfiles/zsh/plugins/docker-zsh-completion/docker-zsh-completion.plugin.zsh
+# source $HOME/code/dotfiles/zsh/plugins/docker-zsh-completion/docker-zsh-completion.plugin.zsh
 
 # Binds ZSH history search up/down keys
 bindkey "$terminfo[kcuu1]" history-substring-search-up
@@ -130,10 +130,36 @@ bindkey "$terminfo[kcud1]" history-substring-search-down
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
+# Binds delete key to delete-char
+bindkey "^[[3~" delete-char
+
+# Bind home + end keys to beginning/end of line
+bindkey  "^[[1~"   beginning-of-line
+bindkey  "^[[4~"   end-of-line
+
+# Bind forward/backward word
+bindkey "[D" backward-word
+bindkey "[C" forward-word
+
 # miniconda3
-export PATH="$HOME/aeksco/miniconda3/bin:$PATH"
+# export PATH="$HOME/aeksco/miniconda3/bin:$PATH"
 
 # Rust 
 # To get started you need Cargo's bin directory ($HOME/.cargo/bin) in your PATH
 # environment variable. Next time you log in this will be done automatically.
-source $HOME/.cargo/env
+# source $HOME/.cargo/env
+
+# Golang
+export GOPATH=$HOME/go
+export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+
+# Homebrew
+export PATH="/opt/homebrew/bin:$PATH"
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# PGP
+export GPG_TTY=$(tty)

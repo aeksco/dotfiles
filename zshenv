@@ -9,8 +9,8 @@ export VISUAL=$EDITOR
 
 # ensure dotfiles bin directory is loaded first
 export PATH="$HOME/bin:$PATH"
-export PATH="/Users/alschwa/.local/share/solana/install/active_release/bin:$PATH"
+export PATH=~/npm-global/bin:$PATH
 
 # Local config
 [[ -f ~/.zshenv.local ]] && source ~/.zshenv.local
-. "$HOME/.cargo/env"
+# . "$HOME/.cargo/env"

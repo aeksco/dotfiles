@@ -40,3 +40,7 @@
   statusHints = false
 # [url "git@github.com:"]
 #   insteadOf = https://github.com/
+[gpg]
+  program = /opt/homebrew/bin/gpg
+[user]
+  signingkey = 9822641A

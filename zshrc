@@ -150,9 +150,9 @@ bindkey "[C" forward-word
 # source $HOME/.cargo/env
 
 # Golang
-export GOPATH=$HOME/go
-export GOROOT="$(brew --prefix golang)/libexec"
-export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+# export GOPATH=$HOME/go
+# export GOROOT="$(brew --prefix golang)/libexec"
+# export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 
 # Homebrew
 export PATH="/opt/homebrew/bin:$PATH"

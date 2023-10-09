@@ -1,0 +1,33 @@
+# Function to count words in a file and format the number with commas
+count_words() {
+    local file="$1"
+    local word_count=$(wc -w < "$file")
+    printf "%'d\n" "$word_count"
+}
+
+# Function to traverse directory and count words in files
+traverse_directory() {
+    local directory="$1"
+    local total_words=0
+
+    # Loop through each file in the directory
+    for file in "${directory}"/**/*(.); do
+        # Count words in the file
+        local words=$(count_words "$file")
+        total_words=$((total_words + words))
+    done
+
+    printf "%'d\n" "$total_words"
+}
+
+# Usage: word_count /path/to/directory
+word_count() {
+    # Check if a directory path is provided
+    if [[ -z $1 ]]; then
+        echo "Please provide a directory path."
+        return 1
+    fi
+
+    # Call the function to traverse the directory
+    traverse_directory "$1"
+}

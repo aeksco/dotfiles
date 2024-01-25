@@ -12,3 +12,4 @@ git clone https://github.com/tmux-plugins/tmux-resurrect ./tmux/plugins/tmux-res
 # PGP Setup
 # https://gist.github.com/troyfontaine/18c9146295168ee9ca2b30c00bd1b41e
 # brew install gpg2 gnupg pinentry-mac
+# ENHANCEMENT - update gitconfig

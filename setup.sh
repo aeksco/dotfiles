@@ -1,10 +1,10 @@
 echo "\nSetting up GIT, ZSH, VIM, TMUX..."
 
 # ZSH Plugins
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ./zsh/plugins
 
 # ZSH Autocomplete
-git clone https://github.com/zsh-users/zsh-history-substring-search
+git clone https://github.com/zsh-users/zsh-history-substring-search ./zsh/plugins
 
 # TMUX Ressursct
 git clone https://github.com/tmux-plugins/tmux-resurrect ./tmux/plugins/tmux-resurrect

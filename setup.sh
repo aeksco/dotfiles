@@ -5,13 +5,13 @@ echo "\nSetting up GIT, ZSH, VIM, TMUX..."
 
 # ZSH Plugins
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
-mv ./zsh-syntax-highlighting ~/.dotfiles/zsh-syntax-highlighting
+# mv ./zsh-syntax-highlighting ~/.dotfiles/zsh-syntax-highlighting
 
 # ZSH Autocomplete
 git clone https://github.com/zsh-users/zsh-history-substring-search
 
 # TMUX Ressursct
-git clone https://github.com/tmux-plugins/tmux-resurrect ./tmux/plugins
+git clone https://github.com/tmux-plugins/tmux-resurrect ./tmux/plugins/tmux-resurrect
 
 # Copies .zshrc, .zshenv
 # cp ~/dotfiles/zshrc ~/.zshrc

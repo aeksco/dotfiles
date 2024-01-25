@@ -156,6 +156,7 @@ bindkey "[C" forward-word
 
 # Homebrew
 export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/opt/homebrew/sbin:$PATH"
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
